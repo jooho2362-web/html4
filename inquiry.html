@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>온라인문의 - 비에이텍(주)</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html">비에이텍(주)</a>
+            </div>
+            <nav class="gnb">
+                <ul>
+                    <li class="has-dropdown">
+                        <a href="intro.html">기업소개</a>
+                        <ul class="dropdown">
+                            <li><a href="intro.html#overview">회사개요</a></li>
+                            <li><a href="intro.html#organization">조직도</a></li>
+                            <li><a href="intro.html#performance">주요사업실적</a></li>
+                            <li><a href="intro.html#certification">인증현황</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="product.html">주요제품</a></li>
+                    <li class="has-dropdown">
+                        <a href="equipment.html">장비 및 시설</a>
+                        <ul class="dropdown">
+                            <li><a href="equipment.html#factory">주요 시설</a></li>
+                            <li><a href="equipment.html#equipment">보유 장비</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="inquiry.html" style="color:var(--primary-blue)">온라인문의</a></li>
+                    <li><a href="map.html">오시는길</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="page-header" style="background-image: url('https://images.unsplash.com/photo-1423666639041-f56000c27a9a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');">
+            <i class="fas fa-envelope-open-text"></i>
+            <h1>온라인문의</h1>
+            <p>제품 견적 및 구매, 기술 상담은 아래 양식을 통해 문의해 주세요.</p>
+        </div>
+
+        <section class="section">
+            <div class="container">
+                <div style="text-align: center; margin-bottom: 44px;">
+                    <h2 class="section-title" style="margin-bottom: 14px;">문의 및 견적 상담 안내</h2>
+                    <p style="color: var(--text-muted); max-width: 620px; margin: 0 auto; line-height: 1.75;">
+                        최적의 성능을 위한 펌프 선정, 견적 제출 및 기술 협의 등의 사항에 대해 아래 양식을 통해 문의해 주시면,<br>담당 영업팀에서 신속하고 정확하게 답변 드리겠습니다.
+                    </p>
+                </div>
+
+                <div class="grid-3" style="margin-bottom: 50px; text-align: center;">
+                    <div class="card" style="padding: 28px 22px;">
+                        <div class="card-icon" style="margin: 0 auto 14px;"><i class="fas fa-edit"></i></div>
+                        <h3 style="font-size: 1.05rem; font-weight: 700; color: var(--primary-dark); margin-bottom: 8px;">1. 문의 접수</h3>
+                        <p style="font-size: 0.88rem; color: var(--text-muted);">필요 내용 및 연락처 정보를 아래에 정확히 작성해 주세요.</p>
+                    </div>
+                    <div class="card" style="padding: 28px 22px;">
+                        <div class="card-icon" style="margin: 0 auto 14px;"><i class="fas fa-file-invoice-dollar"></i></div>
+                        <h3 style="font-size: 1.05rem; font-weight: 700; color: var(--primary-dark); margin-bottom: 8px;">2. 견적 검토</h3>
+                        <p style="font-size: 0.88rem; color: var(--text-muted);">담당 영업팀의 견적 검토 및 제품 선정, 기술 협의 진행.</p>
+                    </div>
+                    <div class="card" style="padding: 28px 22px;">
+                        <div class="card-icon" style="margin: 0 auto 14px;"><i class="fas fa-phone-volume"></i></div>
+                        <h3 style="font-size: 1.05rem; font-weight: 700; color: var(--primary-dark); margin-bottom: 8px;">3. 담당 연락</h3>
+                        <p style="font-size: 0.88rem; color: var(--text-muted);">전화 또는 이메일을 통한 맞춤 기술 제안 및 견적 의견 전달.</p>
+                    </div>
+                </div>
+
+                <div class="inquiry-box">
+                    <form id="inquiryForm">
+                        <div class="grid-2">
+                            <div class="form-group">
+                                <label for="inquiryName">회사명 / 담당자명 <span style="color: #e53e3e;">*</span></label>
+                                <input type="text" id="inquiryName" class="form-control" placeholder="예) 비에이텍(주) 담당자" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="inquiryContact">연락처 <span style="color: #e53e3e;">*</span></label>
+                                <input type="text" id="inquiryContact" class="form-control" placeholder="예) 010-1234-5678" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="inquiryEmail">이메일 주소 <span style="color: #e53e3e;">*</span></label>
+                            <input type="email" id="inquiryEmail" class="form-control" placeholder="예) example@email.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="inquiryMsg">문의 내용 (주요 제품, 수량, 설치 장소 및 기타 요청 사항을 적어주세요) <span style="color: #e53e3e;">*</span></label>
+                            <textarea id="inquiryMsg" class="form-control" placeholder="문의하시는 제품 또는 기타 내용을 자유롭게 적어주세요." required></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label>개인정보 수집 및 이용 동의 <span style="color: #e53e3e;">*</span></label>
+                            <div style="background-color: var(--bg-cool-gray); border: 1px solid var(--border-color); border-radius: 8px; padding: 14px; font-size: 0.84rem; color: var(--text-muted); max-height: 100px; overflow-y: auto; line-height: 1.65; margin-bottom: 12px;">
+                                비에이텍(주)는 온라인 문의 처리를 위해 최소한의 개인정보를 수집 및 이용합니다.<br>
+                                1. 수집 항목: 회사명(담당자명), 연락처, 이메일 주소, 문의 내용.<br>
+                                2. 수집 및 이용 목적: 견적 상담 처리, 제품 기술 상담 안내, 고객 A/S 관련 연락.<br>
+                                3. 보유 및 이용 기간: 목적 달성 후 1년 또는 법령에 따른 기간 경과 시 즉시 파기.<br>
+                                * 위에 대한 동의를 거부하실 경우 서비스 문의 접수가 제한될 수 있습니다.
+                            </div>
+                            <div class="form-checkbox">
+                                <input type="checkbox" id="inquiryAgree" required>
+                                <label for="inquiryAgree">개인정보 수집 및 이용 동의에 관한 위 안내를 충분히 확인하였으며, 이에 동의합니다.</label>
+                            </div>
+                        </div>
+
+                        <div style="text-align: center; margin-top: 28px;">
+                            <button type="submit" class="btn-primary">
+                                <i class="fas fa-paper-plane"></i> 문의 제출하기
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-info">
+                <div class="footer-col">
+                    <h2>비에이텍(주)</h2>
+                    <p><strong>대표이사</strong> 조세현</p>
+                    <p><strong>사업자등록번호</strong> 221-81-42625</p>
+                    <p><strong>설립일</strong> 2010.11.01</p>
+                    <p><strong>업종</strong> 제조, 도매 &nbsp;|&nbsp; <strong>주요생산제품</strong> 모터펌프</p>
+                </div>
+                <div class="footer-col">
+                    <h2>Contact Us</h2>
+                    <p><strong>본사 및 공장</strong> 강원특별자치도 춘천시 퇴계공단2길 64 (퇴계제2농공단지내)</p>
+                    <p><strong>전화</strong> 033-264-9243</p>
+                    <p><strong>팩스</strong> 033-251-5747</p>
+                    <p><strong>담당자 이메일</strong> jooho2362@gmail.com</p>
+                </div>
+            </div>
+            <div class="copyright-bar">
+                <p>&copy; 2026 B.A.Tech. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="successToast" class="toast">
+        <i class="fas fa-check-circle"></i>
+        <span>온라인 문의가 성공적으로 접수되었습니다! 담당자가 최대한 신속히 연락 드리겠습니다!</span>
+    </div>
+
+    <!-- 플로팅 브로슈어 버튼 -->
+    <button id="open-brochure-btn" class="floating-brochure-btn">
+        <i class="fas fa-book-open"></i> 브로슈어
+    </button>
+
+    <!-- 3D 브로슈어 모달 -->
+    <div id="brochure-modal" class="brochure-modal">
+        <span class="brochure-close">&times;</span>
+        <div class="brochure-container">
+            <div class="page page1">
+                <div class="page page2">
+                    <div class="page page3">
+                        <div class="page page4"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        const form = document.getElementById('inquiryForm');
+        if (form) {
+            form.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const toast = document.getElementById('successToast');
+                toast.classList.add('show');
+                setTimeout(() => toast.classList.remove('show'), 4000);
+                form.reset();
+            });
+        }
+    </script>
+</body>
+</html>
+
